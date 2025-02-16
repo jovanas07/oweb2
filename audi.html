@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+
+    <head>
+    <meta charset="utf-8">
+    <title>Audi</title>
+   
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+   <style>
+    body{
+        background:linear-gradient(white,gray);
+        background-size: cover;
+        background-position: center;
+    }
+    h1{
+        font-family: fantasy;
+        font-size: 5rem;
+        text-align: center;
+        color: black;
+        
+    }
+    p{
+        font-family: fantasy;
+        font-size: medium;
+        color: black;
+        text-align: left;
+    }
+    img{
+        
+        width: 70%;
+        height: 70%;
+        margin:  1rem 0;
+        
+    }
+  h2{
+    font-family:fantasy;
+    color: black;
+    
+  }
+  button {
+    background-color: grey;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 200px;
+}
+
+button:hover {
+    background-color: beige;
+}
+textarea {
+    width: 40%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    resize: vertical;
+    margin-left: 200px;
+    display: flex;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: rgb(59, 55, 55);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color:beige;
+}
+
+.container {
+    display: flex;
+    flex-direction: row; 
+    gap: 20px; 
+}
+
+.spec-container {
+    display: flex;
+    justify-content: space-between; 
+    gap: 20px;
+}
+
+.container1, .container2 {
+    width:60; 
+}
+   </style>
+    </head>
+
+    <body>
+        
+        <div class="container">
+            <div class="container1">
+            <h1><strong>Audi A3 Sportback </strong></h1>
+            <img src="audia3.jpg" class="img-rounded" alt="audi" >
+            <h1>Price:38000€</h1>
+            </div>
+            <div class="container2">
+                <h2>Specificaions:</h2>
+                <p>Brand:Audi</p>
+                   <p>Model:Audi A3 Sportback</p>
+                   <p>Engine: 2.0L Intercooled Turbo Gas/Electric I-4, delivering 201 horsepower and 221 lb-ft of torque.</p>
+                   <p>Transmission: 7-speed automatic transmission with dual-shift mode.</p>
+                   <p>Seating Capacity: 5 passengers</p>
+                   <p>Body type:Sportback</p>
+                   <button class="back-link"> Back</button>
+            </div>
+
+    </div>
+        <div class="button">
+        <button id="likeBtn">👍 Like</button>
+        <span id="likeCount">0</span>
+        </div>
+        <div>
+        
+            <textarea id="comment" rows="4" cols="50" placeholder="Enter your comment here..."></textarea><br>
+            <button id="submitComment">Submit</button>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="script.js"></script>
+        </div>
+
+       
